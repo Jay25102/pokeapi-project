@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="profile-info">
+    <h1>{{user.username}}'s Profile</h1>
+    
+    <a href="/user/{{user.id}}/changepassword" class="btn btn-primary btn-sm">Change Password</a>
+    <a href="/user/{{user.id}}/delete" class="btn btn-primary btn-sm">Delete Account</a>
+</div>
+
+{% for team in teams %}
+
+    <div id="profile-teams">
+        <h2>Team {{team[12]}}</h2>
+        <div class="card">
+            {{team[0]}}
+            <img src="{{team[1]}}" alt="{{team[0]}}">
+        </div>
+        <div class="card">
+            {{team[2]}}
+            <img src="{{team[3]}}" alt="{{team[2]}}">
+        </div>
+        <div class="card">
+            {{team[4]}}
+            <img src="{{team[5]}}" alt="{{team[4]}}">
+        </div>
+        <div class="card">
+            {{team[6]}}
+            <img src="{{team[7]}}" alt="{{team[6]}}">
+        </div>
+        <div class="card">
+            {{team[8]}}
+            <img src="{{team[9]}}" alt="{{team[8]}}">
+        </div>
+        <div class="card">
+            {{team[10]}}
+            <img src="{{team[11]}}" alt="{{team[10]}}">
+        </div>
+
+        <div>
+            <a href="/teams/{{team[12]}}/delete" class="btn btn-outline-danger">Delete Team {{team[12]}}</a>
+        </div>
+    </div>
+
+{% endfor %}
+
+{% endblock %}

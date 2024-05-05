@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Search Pokemon:</h1>
+<form id="search-form">
+    <div class="search-container">
+        <input type="text" name="pokemon-search" id="pokemon-search" placeholder="Pokemon name">
+        <div class="suggestions">
+            <ul></ul>
+        </div>
+    </div>
+    <button type="submit" id="finish-search" >Add!</button>
+    <button type="submit" id="finish-team">Create Team!</button>
+</form>
+
+<div>
+    <div id="pokemon-team-div">
+        
+    </div>
+</div>
+
+{% endblock %}

@@ -17,6 +17,8 @@ db.create_all()
 
 CURR_USER_KEY = "current_user"
 
+app.run(host='0.0.0.0', port=5432)
+
 #
 # User stuff
 #

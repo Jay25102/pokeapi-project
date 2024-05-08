@@ -7,7 +7,7 @@ from forms import *
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///dpg-cots20n109ks73d49nkg-a'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://pokeapi_db_thls_user:Tv2NwxTdgzAd7FK7w7lqZyN20nsO3KI6@dpg-cots20n109ks73d49nkg-a/pokeapi_db_thls'
 app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 app.config['SECRET_KEY'] = "somekey"
 toolbar = DebugToolbarExtension(app)
@@ -17,7 +17,7 @@ db.create_all()
 
 CURR_USER_KEY = "current_user"
 
-app.run(host='0.0.0.0', port=5432)
+
 
 #
 # User stuff

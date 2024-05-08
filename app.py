@@ -7,7 +7,7 @@ from forms import *
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///pokeapi'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///dpg-cots20n109ks73d49nkg-a'
 app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 app.config['SECRET_KEY'] = "somekey"
 toolbar = DebugToolbarExtension(app)
